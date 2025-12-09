@@ -46,7 +46,7 @@
 <div align="center" style="margin-top:10px;">
     <img src="assets/fitting.png" alt="Teaser Result" width="70%">
     <p style="font-size:0.95em; max-width:850px;">
-        <b>Qualitative comparison.</b> FLAIR achieves faithful reconstruction while mitigating frequency leakage, 
+        <b>👀 Qualitative comparison.</b> FLAIR achieves faithful reconstruction while mitigating frequency leakage, 
         enabled by the band-limited behavior of BLA. Existing INR models show noise amplification and high-frequency distortion.
     </p>
 </div>
