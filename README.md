@@ -62,10 +62,7 @@
 
 Implicit Neural Representations (INRs) encode signals by mapping coordinates to values using neural networks, enabling compact and continuous representations. While effective, existing INRs lack mechanisms for frequency selectivity and spatial localization, resulting in redundant feature learning and strong spectral bias—favoring low-frequency components while struggling to represent sharp details.
 
-To address these limitations, we introduce **FLAIR**, a framework integrating two complementary innovations:  
-
-(1) **Band-Localized Activation (BLA)**, a novel activation that enforces learnable band selection and spatial locality under the time-frequency uncertainty principle (TFUP).
-(2) **Wavelet-Energy-Guided Encoding (WEGE)**, which leverages discrete wavelet energy to guide frequency signals into the network.
+To address these limitations, we introduce **FLAIR**, a framework integrating two complementary innovations: (1) **Band-Localized Activation (BLA)**, a novel activation that enforces learnable band selection and spatial locality under the time-frequency uncertainty principle (TFUP).(2) **Wavelet-Energy-Guided Encoding (WEGE)**, which leverages discrete wavelet energy to guide frequency signals into the network.
 
 FLAIR consistently improves reconstruction fidelity across 2D image representation, 3D shape modeling, and novel-view synthesis.
 
