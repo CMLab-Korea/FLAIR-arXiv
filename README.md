@@ -54,7 +54,7 @@
 ---
 
 ## 📧 News
-- Code release is in progress.
+- **Dec 09, 2025:** This repository is updated.
 
 ---
 
