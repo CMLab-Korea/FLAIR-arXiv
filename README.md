@@ -76,7 +76,7 @@ FLAIR consistently improves reconstruction fidelity across 2D image representati
     <img src="assets/fig1.png" alt="Architecture" width="95%">
 </div>
 
-**Right:** WEGE computes normalized wavelet-energy scores (w~b).  
+**Right:** WEGE computes normalized wavelet-energy scores w&#771;b.  
 Lower scores are assigned to homogeneous regions (green), while higher scores correspond to textured high-frequency regions (red), providing spatial frequency awareness.
 
 **Left:** The computed scores are concatenated with the input coordinates and fed into BLA.  
@@ -91,7 +91,7 @@ BLA then applies learnable, band-adaptive parameters (&zeta;, T, &sigma;) to con
 - [ ] 2D representation pipeline  
 - [ ] 3D NeRF / SDF integration (built on external implementations)  
 - [ ] Ablation studies (NTK, FFT, etc.)  
-- [ ] Visualization toolkit  
+- [ ] Visualization code 
 
 ---
 
