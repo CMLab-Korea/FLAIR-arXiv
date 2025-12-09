@@ -44,7 +44,7 @@
 </div>
 
 <div align="center" style="margin-top:10px;">
-    <img src="assets/fitting.png" alt="Teaser Result" width="95%">
+    <img src="assets/fitting.png" alt="Teaser Result" width="70%">
     <p style="font-size:0.95em; max-width:850px;">
         <b>Qualitative comparison.</b> FLAIR achieves faithful reconstruction while mitigating frequency leakage, 
         enabled by the band-limited behavior of BLA. Existing INR models show noise amplification and high-frequency distortion.
@@ -73,14 +73,13 @@ FLAIR consistently improves reconstruction fidelity across 2D image representati
 ## ⚙️ Method Overview
 
 <div align="center">
-    <img src="assets/fig1.png" alt="Architecture" width="95%">
+    <img src="assets/fig1.png" alt="Architecture" width="70%">
 </div>
 
-**Right:** WEGE computes normalized wavelet-energy scores w&#771;b.  
-Lower scores are assigned to homogeneous regions (green), while higher scores correspond to textured high-frequency regions (red), providing spatial frequency awareness.
+**WEGE:** Computes normalized wavelet-energy scores (w&#771;<sub>b</sub>).  
+Smooth or homogeneous regions receive lower scores (green), while highly textured or high-frequency regions receive higher scores (red), enabling spatially aware frequency modulation.
 
-**Left:** The computed scores are concatenated with the input coordinates and fed into BLA.  
-BLA then applies learnable, band-adaptive parameters (&zeta;, T, &sigma;) to control frequency shifting and selective band-limiting across low- and high-frequency components.
+**BLA:** The wavelet-energy scores are channel-wise concatenated with the input coordinates and processed using learnable, band-adaptive parameters (&zeta;, T, &sigma;). These parameters regulate frequency shifting and apply selective band-limiting across low- and high-frequency components.
 
 
 ---
