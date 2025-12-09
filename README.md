@@ -76,8 +76,12 @@ FLAIR consistently improves reconstruction fidelity across 2D image representati
     <img src="assets/fig1.png" alt="Architecture" width="95%">
 </div>
 
-**Right:** WEGE computes normalized wavelet-energy scores \(\tilde{w}_b\), assigning low weights to homogeneous regions (green) and higher weights to textured regions (red), enabling spatial frequency relevance.  
-**Left:** The scores are concatenated with input coordinates and passed into BLA, where learnable parameters \((\zeta, T, \sigma)\) modulate frequency shifting and band-limiting behavior.
+**Right:** WEGE computes normalized wavelet-energy scores (w~b).  
+Lower scores are assigned to homogeneous regions (green), while higher scores correspond to textured high-frequency regions (red), providing spatial frequency awareness.
+
+**Left:** The computed scores are concatenated with the input coordinates and fed into BLA.  
+BLA then applies learnable, band-adaptive parameters (&zeta;, T, &sigma;) to control frequency shifting and selective band-limiting across low- and high-frequency components.
+
 
 ---
 
